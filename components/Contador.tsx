@@ -16,8 +16,23 @@ const Contador = (props: Props) => {
     }
 
     return (
-        <View>
-            <Text>Contador: {contador}</Text>
+        <View
+        style={{
+            height: '100%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 20
+
+        }}
+        >
+            <Text
+            style= {{
+                fontSize: 25,
+            }}
+            >
+                Contador: {contador}
+            </Text>
             <Button title='Incrementar' onPress={incrementar} />
             <Button title='Decrementar' onPress={decrementar} />
         </View>
