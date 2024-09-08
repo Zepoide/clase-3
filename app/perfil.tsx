@@ -97,7 +97,10 @@ const Perfil = () => {
                         </Text>
                     </Pressable>
                     <Pressable
-                    onPress={() => setModalVisible(false)}
+                    onPress={() => {
+                        setModalVisible(false)
+                        setActualName('')
+                    }}
                     style={{
                         padding: 10,
                         paddingHorizontal: '10%',
